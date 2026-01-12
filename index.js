@@ -14,10 +14,11 @@ app.get("/student-write",(req,res)=>{
     res.send("student write api");
 });
 
+
 app.post("/student-insert",async(req,res)=>{
     let myDB=await dbConnection();
     let studentCollection=myDB.collection("students");
-    res.send("student insert api");
+    res.send("student insert api version 5");
 });
 
 app.listen(3000,()=>{
