@@ -6,6 +6,10 @@ app.get("/student-read",(req,res)=>{
     res.send("student view api");
 });
 
+app.get("/student-update",(req,res)=>{
+    res.send("student update api");
+});
+
 app.post("/student-insert",async(req,res)=>{
     let myDB=await dbConnection();
     let studentCollection=myDB.collection("students");
